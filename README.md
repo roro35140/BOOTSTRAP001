@@ -11,7 +11,7 @@
 * Le framework **Boostrap est à utiliser**.
 * **Page Ruler** est un addon de règle pour chrome.
 * Les images sont fournies.
-* Pour les icônes, super outil : [awesome](http://fontawesome.io/)
+* **Pour les icônes, super outil** : [awesome](http://fontawesome.io/)
 
 ___
 
