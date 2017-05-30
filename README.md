@@ -2,7 +2,7 @@
 ### Challenge 2 - Reproduction de l'index du site This is Massively
 
 
-![Zozor](/header.png)
+![This is Massively](/header.png)
 ---
 * Votre mission ~~si vous l'acceptez~~ est de reproduire l'index du site internet [This is Massively](https://html5up.net/massively) !
 * Les **Hovers des images sont en bonus** si vous avez le temps de les réaliser, dans ce cas, n'hésitez pas à les faire, c'est fun quand on maîtrise la bête.
@@ -12,6 +12,7 @@
 * **Page Ruler** est un addon de règle pour chrome.
 * Les images sont fournies.
 * **Pour les icônes, super outil** : [awesome](http://fontawesome.io/)
+* **Un README en MArkdown décrivant qui a fait quoi est à mettre dans votre dossier**, cela nous permet de pouvoir vous conseiller de manière pertinante.
 
 ___
 
