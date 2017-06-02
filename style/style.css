@@ -1,0 +1,35 @@
+/*
+BOOTSTRAP001
+-ALEXANDRE BEAUVERGER
+	alexandrebeauverger@gmail.com
+-Olivier
+	
+*/
+
+/*--Table des matieres--
+01_Header
+02_Barre de navigation
+03_Article
+04_Formulaire de contact
+05_Footer
+*/
+
+body{
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+
+.test{
+	height: 750px;
+}
+/*===== Header =====*/
+
+/*===== Barre de navigation =====*/
+
+/*===== Article =====*/
+
+/*===== Formulaire de contact =====*/
+
+/*===== Footer =====*/
