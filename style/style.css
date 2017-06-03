@@ -17,7 +17,22 @@ BOOTSTRAP001
 */
 
 /*===== Background =====*/
-
+#background{
+	width: 100%;
+	height: 1400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+}
+.test{
+	width: 50%;
+	height: 7500px;
+	margin: 850px auto 280px auto;
+	background-color: white;
+	position: relative;
+}
 /*===== Header =====*/
 
 /*===== Barre de navigation =====*/
