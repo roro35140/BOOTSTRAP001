@@ -1,4 +1,4 @@
 $(document).ready(function(){
-	$("#background").fadeIn(8000);
+	$("#background").fadeIn(2000);
 	console.log('test')
 });
