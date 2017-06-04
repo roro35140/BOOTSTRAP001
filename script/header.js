@@ -1,20 +1,21 @@
 function header(){
 	//Apparition du header au chargement de la page
 	var pos = window.pageYOffset;
-	console.log(pos);
 
 	//si pos < 235 au chargement
 	if (pos <= 235){
+			$("header").css("margin-bottom", "135px");
+			$("header").css("margin-top", "310px");
 			$("#fadeUp").animate({ opacity: 1 }, { duration: 1000, queue: false });
 			$("header").animate({ "margin-top": "235px"}, { duration: 1000, queue: false });
-			$("header").animate({ "margin-bottom": "100px"}, { duration: 2000, queue: false });
+			$("header").animate({ "margin-bottom": "100px"}, { duration: 1000, queue: false });
 	}
 	//si pos > 235 au chargement
 	else{
 			$("#massivelyBtn").animate({ "bottom": "0px"}, { duration: 0, queue: false });
 			$("#massivelyBtn").animate({ opacity: 1 }, { duration: 0, queue: false });
 	}
-	
+
 	//Apparition/disparition du header lors du scroll
 	$(window).scroll(function(){
 		//Apparition du titre et du sous-titre si position de scroll < 235px
