@@ -19,6 +19,7 @@ BOOTSTRAP001
 /*=====Font=====*/
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:900');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i');
 
 /*==========*/
 
@@ -56,19 +57,29 @@ html body{
 	background-image: url(../img/bg.jpg);
 	background-size: cover;
 }
+
+/*===== Fondu =====*/
+#fadeUp{
+	opacity: 0;
+}
 /*===== Header =====*/
 
 header{
-	margin: 235px auto 65px auto;
+	height: 535px;
+	margin: 315px auto 135px auto;
 	position: relative;
-	visibility: visible;
+}
+
+.header{
+	margin: 0px auto 140px auto;
+	position: relative;
 	word-wrap: break-word;
 	text-align: center;
 	color: white;
 }
 
 .tittle{
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	font-family: "Source sans pro", sans-serif;
 	font-weight: 900;
 	font-size: 110px;
@@ -78,20 +89,19 @@ header{
 }
 
 .sub-tittle{
-	font-family : georgia;
-	font-size: 25px;
+	font-family : "Merriweather",georgia;
+	font-size: 27px;
 	font-style: italic;
-	line-height: 40px;
-	word-wrap: 95%;
+	line-height: 65px;
 }
 
 .arrow{
 	width: 90px;
 	height: 90px;
-	margin: 60px auto 100px auto;
+	margin: 55px auto 0px auto;
 	border:2px white solid;
 	border-radius: 45px;
-	padding: 30px;
+	padding-top: 27px;
 }
 
 .arrow:hover{
@@ -99,6 +109,23 @@ header{
 	border:2px #18bfef solid;
 	border-radius: 45px;
 	transition: 350ms;
+	cursor:  pointer;
+}
+
+#massivelyBtn{
+	margin: 0 calc(50% - 172.5px);
+	bottom: -50px;
+	padding: 10px 40px;
+	position: absolute;
+	opacity: 0;
+	border: 5px white solid;
+	font-family: "Source sans pro", sans-serif;
+	font-size: 45px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: white;
+}
 }
 /*===== Barre de navigation =====*/
 
