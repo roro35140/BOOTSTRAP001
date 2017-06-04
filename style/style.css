@@ -15,6 +15,8 @@ BOOTSTRAP001
 05_Formulaire de contact
 06_Footer
 */
+/*font*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:900');
 /*===== definition des tailles d'écrans et fenêtres pour la classe .container:olivier=====*/
 @media (min-width: 768px) {
   .container {
@@ -32,9 +34,34 @@ BOOTSTRAP001
   }
 }
 /*===== Background =====*/
-
+#background{
+	width: 100%;
+	height: 1400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+}
 /*===== Header =====*/
+#header{
+	width: 600px;
+	height: 245px;
+	margin:250px auto 0 auto;
+	position: relative;
+	line-height: 110px;
+	word-wrap: break-word;
+}
 
+.tittle{
+	font-family: "Source sans pro", helvetica, sans-serif;
+	font-weight: 900;
+	font-size: 110px;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	letter-spacing: 6px;
+}
 /*===== Barre de navigation =====*/
 
 /*===== Article =====*/
