@@ -64,6 +64,15 @@ BOOTSTRAP001
 }
 /*===== Barre de navigation =====*/
 
+
+.navbar-inverse ul li a {
+	font-size:18px;
+	font-family:"Source sans pro", helvetica, sans-serif;
+	color:white;
+	font-weight:900;
+}
+
+
 /*===== Article =====*/
 
 /*===== Formulaire de contact =====*/
