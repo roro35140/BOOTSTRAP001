@@ -1,3 +1,5 @@
+
+/*===== Formulaire de contact =====*/
 /*
 BOOTSTRAP001
 -ALEXANDRE BEAUVERGER
@@ -26,7 +28,29 @@ BOOTSTRAP001
 html body{
 	background-color: #222931;
 }
+
 /*===== Boutons =====*/
+
+/*===== Definition des tailles d'écrans et fenêtres pour la classe .container:olivier===*/
+
+@media (min-width: 768px) {
+  .container{
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container{
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container{
+    width: 1170px;
+  }
+}
+
+/*===== Commun =====*/
+
 
 button{
 	height: 65px;
@@ -49,24 +73,19 @@ button:hover{
 	cursor:  pointer;
 }
 
-/*===== Definition des tailles d'écrans et fenêtres pour la classe .container:olivier===*/
 
-@media (min-width: 768px) {
-  .container-fluid {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container-fluid {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container-fluid {
-    width: 1170px;
-  }
+.link{
+	text-decoration: underline;
 }
 
+.link:active{
+	color: white;
+}
+
+.link:hover{	
+	color: #18bfef;
+}
+>>>>>>> 875ee294927e9d92b8fbaac77bf471aba60b5c6b
 /*===== Background =====*/
 
 #background{
@@ -84,16 +103,16 @@ button:hover{
 #fadeUp{
 	opacity: 0;
 }
-/*===== Header =====*/
 
+/*===== Header =====*/
 header{
-	height: 535px;
-	margin: 235px auto 100px auto;
+	height: 520px;
+	margin: 0 auto;
 	position: relative;
 }
 
 .header{
-	margin: 0px auto 140px auto;
+	margin: 0 auto;
 	position: relative;
 	word-wrap: break-word;
 	text-align: center;
@@ -101,10 +120,10 @@ header{
 }
 
 .tittle{
-	margin-bottom: 40px;
+	margin-bottom: 40px; 
 	font-family: "Source sans pro", sans-serif;
 	font-weight: 900;
-	font-size: 110px;
+	font-size: 115px;
 	text-transform: uppercase;
 	line-height: 110px;
 	letter-spacing: 6px;
@@ -122,9 +141,9 @@ header{
 	width: 90px;
 	height: 90px;
 	margin: 0 calc(50% - 45px) 0 calc(50% - 45px);
-	padding: 0px;
 	border: 2px white solid;
 	border-radius: 45px;
+	padding: 0px;
 	color: white;
 }
 
@@ -154,6 +173,7 @@ header{
 	border-color: #18bfef;
 	color: #18bfef;
 }
+
 /*===== Barre de navigation =====*/
 .container{
 	position: relative;
@@ -194,7 +214,6 @@ ul li  a{
 	color:black;
 }
 
-
 /*===== Article =====*/
 section{
 	
@@ -214,13 +233,14 @@ img{
 /* ==action sur les survols==*/
 img:hover{
 	transform:scale(1.05);
-
 }
 
 h1,h2:hover{
-	color: #18bfef;
-	
+
+	color: #18bfef;	
 }
+
+
 a:hover{
 	text-decoration:none;
 }
@@ -240,7 +260,7 @@ h1{
 	font-size:4.8em;
 }
 
-p {
+section p {
 	font-family:"MerriWeather";
 	font-style: italic;
 	font-size:15px;
@@ -248,7 +268,7 @@ p {
 	margin:auto;
 	letter-spacing:0.1em;
 	line-height:30px;
-	margin:50px auto 0;
+	margin:50px auto 0;	
 }
 
 
@@ -259,10 +279,12 @@ h2 {
 	font-size:35px;
 	
 }
+<<<<<<< HEAD
 /* ==la pagination==*/
-.pagination li a{
+
+.pagination li a {
 	color:black;
-	height:15%;
+	height:10%;
 }
 
 .pagination li{
@@ -276,7 +298,10 @@ background-color:white;
 
 
 /*===== Formulaire de contact =====*/
+
 .contact{
+	width: 100%;
+	margin: 0 auto;
 	background-color: #f5f5f5;
 	text-align: left;	
 	font-family : "Merriweather",georgia;
@@ -284,17 +309,21 @@ background-color:white;
 	color: #717981;
 }
 
+	/*--- Mail ---*/
+
 .mail{
 	width: 595px;
 	margin: 0 auto;
 	padding: 75px 0 90px 0;
 }
+
 h4{
 	margin-bottom: 20px;
 	font-family: "Source sans pro", sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 900;
 	text-transform: uppercase;
+	letter-spacing: 1px
 }
 
 input{
@@ -323,18 +352,60 @@ input:focus{
 	color: #717981;
 }
 
-.right-middle{
-	border-left: 2px #e2e2e2 solid;
+	/*---Coordonees---*/
+
+.coord{
+	width: 595px;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
 }
 
-.left-middle{
-	border-right: 2px #e2e2e2 solid;
+.coord-form{
+	width: 100%;
+	height: 175px;
+	margin: 10px 0 0 0;
+	line-height: 175px
+}
+
+.coord h4{
+	width: 125px;
+	position: relative;
+	display: inline-flex;
+	float: top;
+}
+
+.coord p{
+	display: inline-flex;
+	font-family : "Merriweather",georgia;
+	font-size: 18px;
+	line-height: 50px;
+	font-weight: 300;
+}
+
+.coord ul{
+	display: inline-flex;
+	list-style: none;
+	color: 
+}
+
+.coord ul li{
+	margin: 0 5px 0 0;
+}
+
+.coord ul li:hover{
+	margin: 0 5px 0 0;
+	color:#00BFFF;
+	transition: 350ms
+}
+
+.link{
+	color: #717981;	
 }
 
 /*===== Footer =====*/
+
 footer p{
 	position: relative;
-	margin: 90px auto 170px auto;
 	text-align: center;
 	color: white;
 }
