@@ -157,6 +157,7 @@ header{
 #massivelyBtn:hover{	
 	border-color: #18bfef;
 	}
+	
 /*===== Barre de navigation =====*/
 .container{
 	position:relative
@@ -179,7 +180,7 @@ ul li  a{
 }
 
 .navbar-left .active a:hover{
-	color:#00BFFF;
+	color: #18bfef;
 	background-color:white;
 }
 
@@ -190,7 +191,7 @@ ul li  a{
 
 .navbar-right li a:hover{
 	background-color:transparent;
-	color:#00BFFF;
+	color: #18bfef;
 }
 .navbar-left  .active a{
 	background-color:white;
@@ -202,14 +203,66 @@ ul li  a{
 
 /*===== Section =====*/
 section{
-	
 	background-color:white;
-
+	text-align:center;
+	padding-top:50px;
 }
+
+/*== definition des images===*/
 
 img{
-	margin: 0 auto;
+	
+	margin: 50px auto 0;
+	
 }
+/* ==action sur les survols==*/
+img:hover{
+	transform:scale(1.05);
+
+}
+
+h1,h2:hover{
+	color: #18bfef;
+	
+}a:hover{
+	text-decoration:none;
+}
+
+
+/* ==definition des balises h et p==*/
+h3 {
+	font-family:"MerriWeather";
+	font-size:18px;
+	margin:50px 0;
+}
+
+h1{
+	font-family: "Source sans pro", sans-serif;
+	color:black;
+	font-size:4.8em;
+}
+
+p {
+	font-family:"MerriWeather";
+	font-style: italic;
+	font-size:15px;
+	width:500px;
+	margin:auto;
+	letter-spacing:0.1em;
+	line-height:30px;
+	margin:50px auto 0;
+	
+	
+	
+}
+h2 {
+	
+	font-family: "Source sans pro", sans-serif;
+	color:black;
+	font-size:35px;
+	
+}
+
 /*===== Formulaire de contact =====*/
 
 .contact{
