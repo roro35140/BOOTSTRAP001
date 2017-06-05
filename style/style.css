@@ -175,13 +175,14 @@ header{
 	text-align: center;
 }
 img{
+	width: 100%;
 	margin: 0 auto;
 }
+
 /*===== Formulaire de contact =====*/
 
 .contact{
 	background-color: #f5f5f5;
-	padding: 75px 0 90px 0;
 	text-align: left;	
 	font-family : "Merriweather",georgia;
 	font-style: normal;
@@ -191,6 +192,7 @@ img{
 .mail{
 	width: 595px;
 	margin: 0 auto;
+	padding: 75px 0 90px 0;
 }
 h4{
 	margin-bottom: 20px;
@@ -224,6 +226,14 @@ input:focus{
 	margin: 20px 0 0 0;
 	border: 2px #717981 solid;
 	color: #717981;
+}
+
+.right-middle{
+	border-left: 2px #e2e2e2 solid;
+}
+
+.left-middle{
+	border-right: 2px #e2e2e2 solid;
 }
 /*===== Footer =====*/
 
