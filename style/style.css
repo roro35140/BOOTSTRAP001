@@ -235,11 +235,15 @@ img:hover{
 	transform:scale(1.05);
 }
 
-h1,h2:hover{
+h2:hover{
 
 	color: #18bfef;	
 }
 
+h1:hover{
+
+	color: #18bfef;	
+}
 
 a:hover{
 	text-decoration:none;
@@ -279,12 +283,13 @@ h2 {
 	font-size:35px;
 	
 }
-<<<<<<< HEAD
+
 /* ==la pagination==*/
 
 .pagination li a {
 	color:black;
-	height:10%;
+	height:40px;
+	border:1px solid lightgrey;
 }
 
 .pagination li{
