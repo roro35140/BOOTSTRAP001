@@ -3,21 +3,22 @@ BOOTSTRAP001
 -ALEXANDRE BEAUVERGER
 	alexandrebeauverger@gmail.com
 -Olivier Romer
-	romer.olivier@neuf.fr	
+	romer.olivier@neuf.fr
+	
 */
 
 /*--Table des matieres--
 01_Background
 02_Header
 03_Barre de navigation
-04_Section
+04_Article
 05_Formulaire de contact
 06_Footer
 */
 
 /*=====Font=====*/
+
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:900');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300i');
 
 /*==========*/
@@ -29,22 +30,23 @@ html body{
 /*===== Definition des tailles d'écrans et fenêtres pour la classe .container:olivier===*/
 
 @media (min-width: 768px) {
-  .container-fluid {
+  .container{
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container-fluid {
+  .container{
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container-fluid {
+  .container{
     width: 1540px;
   }
 }
 
 /*===== Boutons =====*/
+
 button{
 	height: 65px;
 	margin: 85px 0;
@@ -65,6 +67,280 @@ button:hover{
 	transition: 350ms;
 	cursor:  pointer;
 }
+
+/*===== Background =====*/
+
+#background{
+	width: 100%;
+	height: 1400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+}
+
+/*===== Fondu =====*/
+
+#fadeUp{
+	opacity: 0;
+}
+
+/*===== Header =====*/
+header{
+	height: 520px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header{
+	margin: 0 auto;
+	position: relative;
+	word-wrap: break-word;
+	text-align: center;
+	color: white;
+}
+
+.tittle{
+	margin-bottom: 40px; 
+	font-family: "Source sans pro", sans-serif;
+	font-weight: 900;
+	font-size: 115px;
+	text-transform: uppercase;
+	line-height: 110px;
+	letter-spacing: 6px;
+}
+
+.sub-tittle{
+	margin-bottom: 42px; 
+	font-family : "Merriweather",georgia;
+	font-size: 27px;
+	font-style: italic;
+	line-height: 65px;
+}
+
+.arrow{
+	width: 90px;
+	height: 90px;
+	margin: 0 calc(50% - 45px) 0 calc(50% - 45px);
+	padding: 0px;
+	border: 2px white solid;
+	border-radius: 45px;
+	color: white;
+}
+
+.arrow:hover{
+	border: 2px #18bfef solid;
+	color: #18bfef;
+	transition: 350ms;
+	cursor:  pointer;
+}
+
+#massivelyBtn{
+	width: 350px;
+	height: 100px;
+	margin: 0 calc(50% - 175px);
+	bottom: -50px;
+	padding: 10px 40px;
+	position: absolute;
+	border: 5px white solid;
+	opacity: 0;
+	font-size: 45px;
+	color: white;
+	font-weight: 900;
+	letter-spacing: 4px;
+}
+
+#massivelyBtn:hover{	
+	border-color: #18bfef;
+	color: #18bfef;
+}
+
+/*===== Barre de navigation =====*/
+
+.container{
+	position: relative;
+}
+
+.navbar{
+	
+	background-color:rgba(186,186,186, 0.3);
+	margin-bottom:0;
+	padding-right:20px;
+	border:none;
+}
+
+ul li  a{
+	font-family: "Source sans pro", sans-serif;
+	font-size:15px;
+	letter-spacing:0.1em;
+	color:white;
+	height:65px;
+}
+
+.navbar-left .active a:hover{
+	color: #18bfef;
+	background-color:white;
+}
+
+.navbar-left li a:hover{
+	background-color:rgba(186,186,186, 0.4);
+	color:white;
+}
+
+.navbar-right li a:hover{
+	background-color:transparent;
+	color: #18bfef;
+}
+.navbar-left  .active a{
+	background-color:white;
+	color:black;
+}
+
+<<<<<<< HEAD
+
+
+
+/*===== Section =====*/
+section{
+	background-color:white;
+	text-align:center;
+	padding-top:50px;
+}
+=======
+/*===== Article =====*/
+>>>>>>> c1644e7985504c629842555f832d0c7402cb3741
+
+/*== definition des images===*/
+
+img{
+	
+	margin: 50px auto 0;
+	
+}
+/* ==action sur les survols==*/
+img:hover{
+	transform:scale(1.05);
+
+}
+
+h1,h2:hover{
+	color: #18bfef;
+	
+}a:hover{
+	text-decoration:none;
+}
+
+
+/* ==definition des balises h et p==*/
+h3 {
+	font-family:"MerriWeather";
+	font-size:18px;
+	margin:50px 0;
+}
+<<<<<<< HEAD
+
+h1{
+	font-family: "Source sans pro", sans-serif;
+	color:black;
+	font-size:4.8em;
+}
+
+p {
+	font-family:"MerriWeather";
+	font-style: italic;
+	font-size:15px;
+	width:500px;
+	margin:auto;
+	letter-spacing:0.1em;
+	line-height:30px;
+	margin:50px auto 0;
+	
+	
+	
+}
+h2 {
+	
+	font-family: "Source sans pro", sans-serif;
+	color:black;
+	font-size:35px;
+	
+}
+
+/*===== Formulaire de contact =====*/
+
+=======
+>>>>>>> c1644e7985504c629842555f832d0c7402cb3741
+/*
+BOOTSTRAP001
+-ALEXANDRE BEAUVERGER
+	alexandrebeauverger@gmail.com
+-Olivier Romer
+	romer.olivier@neuf.fr
+	
+*/
+
+/*--Table des matieres--
+01_Background
+02_Header
+03_Barre de navigation
+04_Article
+05_Formulaire de contact
+06_Footer
+*/
+
+/*=====Font=====*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:900');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i');
+
+/*==========*/
+
+html body{
+	background-color: #222931;
+}
+/*===== Boutons =====*/
+
+button{
+	height: 65px;
+	margin: 85px 0;
+	padding: 0 42px;
+	background-color: rgba(0,0,0,0);
+	border: 2px black solid;
+	text-align: center;
+	font-family: "Source sans pro", sans-serif;
+	font-size: 17px;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+button:hover{	
+	color: #18bfef;
+	border-color: #18bfef;
+	transition: 350ms;
+	cursor:  pointer;
+}
+
+/*===== Definition des tailles d'écrans et fenêtres pour la classe .container:olivier===*/
+
+@media (min-width: 768px) {
+  .container-fluid {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-fluid {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1170px;
+  }
+}
+
 /*===== Background =====*/
 
 #background{
@@ -109,6 +385,7 @@ header{
 }
 
 .sub-tittle{
+	margin-bottom: 42px; 
 	font-family : "Merriweather",georgia;
 	font-size: 27px;
 	font-style: italic;
@@ -116,24 +393,18 @@ header{
 }
 
 .arrow{
-	width: 100%;
+	width: 90px;
 	height: 90px;
-	margin-top: 55px;
-}
-
-.arrow-circle{	
-	max-width: 90px;
-	height: 90px;
-	margin: 0 calc(50% - 45px);
-	padding-top: 27px;
-	border:2px white solid;
+	margin: 0 calc(50% - 45px) 0 calc(50% - 45px);
+	padding: 0px;
+	border: 2px white solid;
 	border-radius: 45px;
 	color: white;
 }
 
-.arrow-circle:hover{	
+.arrow:hover{
+	border: 2px #18bfef solid;
 	color: #18bfef;
-	border-color: #18bfef;
 	transition: 350ms;
 	cursor:  pointer;
 }
@@ -153,14 +424,13 @@ header{
 	letter-spacing: 4px;
 }
 
-
 #massivelyBtn:hover{	
 	border-color: #18bfef;
-	}
-	
+	color: #18bfef;
+}
 /*===== Barre de navigation =====*/
 .container{
-	position:relative
+	position: relative;
 }
 
 .navbar{
@@ -199,14 +469,14 @@ ul li  a{
 }
 
 
-
-
-/*===== Section =====*/
+/*===== Article =====*/
 section{
+	position:relative;
 	background-color:white;
 	text-align:center;
 	padding-top:50px;
 }
+
 
 /*== definition des images===*/
 
@@ -236,6 +506,7 @@ h3 {
 	margin:50px 0;
 }
 
+
 h1{
 	font-family: "Source sans pro", sans-serif;
 	color:black;
@@ -262,12 +533,10 @@ h2 {
 	font-size:35px;
 	
 }
-
+}
 /*===== Formulaire de contact =====*/
-
 .contact{
 	background-color: #f5f5f5;
-	padding: 75px 0 90px 0;
 	text-align: left;	
 	font-family : "Merriweather",georgia;
 	font-style: normal;
@@ -277,11 +546,12 @@ h2 {
 .mail{
 	width: 595px;
 	margin: 0 auto;
+	padding: 75px 0 90px 0;
 }
 h4{
 	margin-bottom: 20px;
 	font-family: "Source sans pro", sans-serif;
-	font-size: 20px
+	font-size: 20px;
 	font-weight: 900;
 	text-transform: uppercase;
 }
@@ -311,8 +581,16 @@ input:focus{
 	border: 2px #717981 solid;
 	color: #717981;
 }
-/*===== Footer =====*/
 
+.right-middle{
+	border-left: 2px #e2e2e2 solid;
+}
+
+.left-middle{
+	border-right: 2px #e2e2e2 solid;
+}
+
+/*===== Footer =====*/
 footer p{
 	position: relative;
 	margin: 90px auto 170px auto;
