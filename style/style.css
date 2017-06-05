@@ -16,8 +16,8 @@ BOOTSTRAP001
 */
 
 /*=====Font=====*/
-
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:900');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300i');
 
 /*==========*/
@@ -44,6 +44,27 @@ html body{
   }
 }
 
+/*===== Boutons =====*/
+button{
+	height: 65px;
+	margin: 85px 0;
+	padding: 0 42px;
+	background-color: rgba(0,0,0,0);
+	border: 2px black solid;
+	text-align: center;
+	font-family: "Source sans pro", sans-serif;
+	font-size: 17px;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+button:hover{	
+	color: #18bfef;
+	border-color: #18bfef;
+	transition: 350ms;
+	cursor:  pointer;
+}
 /*===== Background =====*/
 
 #background{
@@ -119,20 +140,23 @@ header{
 
 #massivelyBtn{
 	width: 350px;
+	height: 100px;
 	margin: 0 calc(50% - 175px);
 	bottom: -50px;
 	padding: 10px 40px;
 	position: absolute;
 	border: 5px white solid;
 	opacity: 0;
-	font-family: "Source sans pro", sans-serif;
 	font-size: 45px;
-	font-weight: 900;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 4px;
 	color: white;
+	font-weight: 900;
+	letter-spacing: 4px;
 }
+
+
+#massivelyBtn:hover{	
+	border-color: #18bfef;
+	}
 /*===== Barre de navigation =====*/
 
 
@@ -155,7 +179,54 @@ img{
 }
 /*===== Formulaire de contact =====*/
 
+.contact{
+	background-color: #f5f5f5;
+	padding: 75px 0 90px 0;
+	text-align: left;	
+	font-family : "Merriweather",georgia;
+	font-style: normal;
+	color: #717981;
+}
+
+.mail{
+	width: 595px;
+	margin: 0 auto;
+}
+h4{
+	margin-bottom: 20px;
+	font-family: "Source sans pro", sans-serif;
+	font-size: 20px
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+input{
+	width: 595px;
+	height: 60px;
+	margin-bottom: 25px;
+	padding-left: 20px;
+	background-color: #f5f5f5;
+	border: 2px #e2e2e2 solid;
+	font-size: 20px;
+}
+
+input:focus{
+	border: 2px #18bfef solid;	
+	transition: 350ms;
+}
+
+.message{	
+	height: 195px;
+	vertical-align: top;
+}
+
+.send{
+	margin: 20px 0 0 0;
+	border: 2px #717981 solid;
+	color: #717981;
+}
 /*===== Footer =====*/
+
 footer p{
 	position: relative;
 	margin: 90px auto 170px auto;
