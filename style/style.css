@@ -3,21 +3,22 @@ BOOTSTRAP001
 -ALEXANDRE BEAUVERGER
 	alexandrebeauverger@gmail.com
 -Olivier Romer
-	romer.olivier@neuf.fr	
+	romer.olivier@neuf.fr
+	
 */
 
 /*--Table des matieres--
 01_Background
 02_Header
 03_Barre de navigation
-04_Section
+04_Article
 05_Formulaire de contact
 06_Footer
 */
 
 /*=====Font=====*/
+
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:900');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300i');
 
 /*==========*/
@@ -29,22 +30,23 @@ html body{
 /*===== Definition des tailles d'écrans et fenêtres pour la classe .container:olivier===*/
 
 @media (min-width: 768px) {
-  .container-fluid {
+  .container{
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container-fluid {
+  .container{
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container-fluid {
+  .container{
     width: 1540px;
   }
 }
 
 /*===== Boutons =====*/
+
 button{
 	height: 65px;
 	margin: 85px 0;
@@ -65,6 +67,7 @@ button:hover{
 	transition: 350ms;
 	cursor:  pointer;
 }
+
 /*===== Background =====*/
 
 #background{
@@ -79,19 +82,20 @@ button:hover{
 }
 
 /*===== Fondu =====*/
+
 #fadeUp{
 	opacity: 0;
 }
-/*===== Header =====*/
 
+/*===== Header =====*/
 header{
-	height: 535px;
-	margin: 235px auto 100px auto;
+	height: 520px;
+	margin: 0 auto;
 	position: relative;
 }
 
 .header{
-	margin: 0px auto 140px auto;
+	margin: 0 auto;
 	position: relative;
 	word-wrap: break-word;
 	text-align: center;
@@ -99,16 +103,17 @@ header{
 }
 
 .tittle{
-	margin-bottom: 40px;
+	margin-bottom: 40px; 
 	font-family: "Source sans pro", sans-serif;
 	font-weight: 900;
-	font-size: 110px;
+	font-size: 115px;
 	text-transform: uppercase;
 	line-height: 110px;
 	letter-spacing: 6px;
 }
 
 .sub-tittle{
+	margin-bottom: 42px; 
 	font-family : "Merriweather",georgia;
 	font-size: 27px;
 	font-style: italic;
@@ -116,24 +121,18 @@ header{
 }
 
 .arrow{
-	width: 100%;
+	width: 90px;
 	height: 90px;
-	margin-top: 55px;
-}
-
-.arrow-circle{	
-	max-width: 90px;
-	height: 90px;
-	margin: 0 calc(50% - 45px);
-	padding-top: 27px;
-	border:2px white solid;
+	margin: 0 calc(50% - 45px) 0 calc(50% - 45px);
+	padding: 0px;
+	border: 2px white solid;
 	border-radius: 45px;
 	color: white;
 }
 
-.arrow-circle:hover{	
+.arrow:hover{
+	border: 2px #18bfef solid;
 	color: #18bfef;
-	border-color: #18bfef;
 	transition: 350ms;
 	cursor:  pointer;
 }
@@ -153,13 +152,15 @@ header{
 	letter-spacing: 4px;
 }
 
-
 #massivelyBtn:hover{	
 	border-color: #18bfef;
-	}
+	color: #18bfef;
+}
+
 /*===== Barre de navigation =====*/
+
 .container{
-	position:relative
+	position: relative;
 }
 
 .navbar{
@@ -197,23 +198,11 @@ ul li  a{
 	color:black;
 }
 
-
-
-
-/*===== Section =====*/
-section{
-	
-	background-color:white;
-
-}
+/*===== Article =====*/
 
 img{
-	width: 100%;
 	margin: 0 auto;
 }
-
-/*===== Formulaire de contact =====*/
-
 .contact{
 	background-color: #f5f5f5;
 	text-align: left;	
@@ -230,7 +219,7 @@ img{
 h4{
 	margin-bottom: 20px;
 	font-family: "Source sans pro", sans-serif;
-	font-size: 20px
+	font-size: 20px;
 	font-weight: 900;
 	text-transform: uppercase;
 }

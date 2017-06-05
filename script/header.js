@@ -4,14 +4,16 @@ function header(){
 
 	//si pos < 235 au chargement
 	if (pos <= 235){
-			$("header").css("margin-bottom", "135px");
 			$("header").css("margin-top", "310px");
+			$("header").css("margin-bottom", "175px");
 			$("#fadeUp").animate({ opacity: 1 }, { duration: 1000, queue: false });
-			$("header").animate({ "margin-top": "235px"}, { duration: 1000, queue: false });
-			$("header").animate({ "margin-bottom": "100px"}, { duration: 1000, queue: false });
+			$("header").animate({ "margin-top": "235"}, { duration: 1000, queue: false });
+			$("header").animate({ "margin-bottom": "100"}, { duration: 1000, queue: false });
 	}
 	//si pos > 235 au chargement
-	else{
+	else{	
+			$("header").css("margin-top", "235px");
+			$("header").css("margin-bottom", "100px");
 			$("#massivelyBtn").animate({ "bottom": "0px"}, { duration: 0, queue: false });
 			$("#massivelyBtn").animate({ opacity: 1 }, { duration: 0, queue: false });
 	}
